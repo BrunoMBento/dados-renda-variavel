@@ -27,7 +27,7 @@ def processarLinha(l, tag, colunasUteis):
 	numCol = 1
 	for c in colunas:
 		if numCol in colunasUteis:
-			str += c.text+'\t'
+			str += c.text[:5]+'\t'
 		numCol = numCol + 1
 	return str
 
